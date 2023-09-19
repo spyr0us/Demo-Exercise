@@ -30,16 +30,20 @@ app.use(function(req, res, next)
 
 // PostgreSQL database connection parameters
 const dbConfig = {
-  host: 'localhost',
-  port: 5432,
-  database: 'testDb',
-  user: 'testUser',
-  password: 'testPassword',
+  host: '192.168.49.2',
+  port: 30432,
+  database: 'postgresdb',
+  user: 'postgres',
+  password: 'root',
 };
 
 // Initialize the database connection
 const db = pgp(dbConfig);
 
+db.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
 //Gia ta default prom metrics
 //const collectDefaultMetrics = prom.collectDefaultMetrics();
  
