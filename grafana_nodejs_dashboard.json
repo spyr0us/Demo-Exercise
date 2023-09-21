@@ -117,7 +117,7 @@
           "expr": "nodejs_http_request_count{method=\"GET\",route=\"/health\",statusCode=\"200\",app=\"nodejs\"}",
           "hide": false,
           "instant": false,
-          "legendFormat": "Endpoint : /healthy",
+          "legendFormat": "Endpoint : /health",
           "range": true,
           "refId": "B"
         },

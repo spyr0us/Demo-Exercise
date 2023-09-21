@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nodeserver
-        image: spyrous/node_db_app:v24 #spyrous/node_db_app:v19
+        image: spyrous/node_db_app:final
         imagePullPolicy : IfNotPresent
         ports:
         - containerPort: 3000

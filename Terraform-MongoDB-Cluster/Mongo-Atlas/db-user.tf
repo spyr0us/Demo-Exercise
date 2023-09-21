@@ -6,7 +6,7 @@ resource "mongodbatlas_database_user" "db-user" {
   auth_database_name = "admin"
   roles {
     role_name     = "readWrite"
-    database_name = "test-cluster"
+    database_name = var.cluster_name
   }
 }
 
