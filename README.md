@@ -23,4 +23,3 @@ kubectl --namespace prometheus port-forward $POD_NAME 9090
    docker build -t spyrous/node_db_app:final .\
    If you use minikube you will need to execute: eval $(minikube docker-env) in order for minikube to retrieve the local docker file.
 
-
