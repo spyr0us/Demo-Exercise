@@ -21,5 +21,4 @@ kubectl --namespace prometheus port-forward $POD_NAME 9090
 
 4. In order to successfully build the image you need to be on the directory K8s-NodeJS-App/Docker-Image and execute:\
    docker build -t spyrous/node_db_app:final .\
-   If you use minikube you will need to execute: eval $(minikube docker-env) in order for minikube to retrieve the local docker file.
-
+   !! If you use minikube you will need to execute: eval $(minikube docker-env) first in order for minikube to be able to retrieve the local docker file. !!
