@@ -1,5 +1,5 @@
 atlas_org_id = "<Your org id>"
-atlas_project_name = "First Project"
+atlas_project_name = "<Your Project's Name>"
 environment = "dev"
 cluster_instance_size_name = "M0"
 cloud_provider = "TENANT"
